@@ -2,21 +2,13 @@
 # See README.md for instructions on how to do this
 
 def fizzbuzz(int)
-  # if int % 3 == 0 # if the number int is divisible by 3
-  #   "Fizz"
-  # elsif int % 5 == 0 # if the number int is divisible by 5
-  #   "Buzz"
-  # elsif int % 15 == 0 # if the number int is divisible by 3 & 5
-  #   "FizzBuzz"
-  # else
-
-    if int % 5 == 0 and int % 3 == 0
-        "FizzBuzz"
-      elsif int % 5 == 0
-        "Buzz"
-      elsif int % 3 == 0
-        "Fizz"
-      else
+  if int % 3 == 0 # if the number int is divisible by 3
+    "Fizz"
+  elsif int % 5 == 0 # if the number int is divisible by 5
+    "Buzz"
+  elsif int % 5 == 0 and int % 3 == 0 # if the number int is divisible by 3 & 5
+    "FizzBuzz"
+  else
         # return nil
   end
 end
